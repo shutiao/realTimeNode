@@ -1,0 +1,9 @@
+<h1>User Info for Douban User: <%= uid %></h1>
+<ul>
+<% Object.keys(userInfoObject).forEach(function(key){ %>
+	<li>
+	<label><%= key %>:</label>
+	<p><%= userInfoObject[key] %></p>
+	</li>
+<% }); %>
+</ul>
